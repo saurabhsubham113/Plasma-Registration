@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Donor</title>
+  </head>
+  <body class="donor-page">
+    <h1 class="donor-title">Please fill the form</h1>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" id="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="blood-group">Blood Group</label>
+        <select required name="blood-group" id="blood-group">
+          <option disabled selected value="">Choose Blood group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Contact</label>
+        <input
+          type="tel"
+          placeholder="Enter your mobile no."
+          id="mobile"
+          required
+        />
+      </div>
+
+      <button class="btn-donor-submit" type="submit">Save</button>
+    </form>
+  </body>
+</html>
