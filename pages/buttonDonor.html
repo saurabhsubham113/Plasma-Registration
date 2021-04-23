@@ -11,37 +11,68 @@
     <h1 class="donor-title">Please fill the form</h1>
 
     <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" placeholder="Enter your name" id="name" required />
-      </div>
+      <div class="form-container">
+        <div class="form-left">
+          <div class="form-group">
+            <label for="name"> Name<span class="danger">*</span> </label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="name"
+              required
+            />
+          </div>
 
-      <div class="form-group">
-        <label for="blood-group">Blood Group</label>
-        <select required name="blood-group" id="blood-group">
-          <option disabled selected value="">Choose Blood group</option>
-          <option value="A+">A+</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B-">B-</option>
-          <option value="AB+">AB+</option>
-          <option value="AB-">AB-</option>
-          <option value="O+">O+</option>
-          <option value="O-">O-</option>
-        </select>
-      </div>
+          <div class="form-group">
+            <label for="blood-group"
+              >Blood Group<span class="danger">*</span></label
+            >
+            <select required name="blood-group" id="blood-group">
+              <option disabled selected value="">Choose Blood group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="don't know">don't know</option>
+            </select>
+          </div>
 
-      <div class="form-group">
-        <label for="mobile">Contact</label>
-        <input
-          type="tel"
-          placeholder="Enter your mobile no."
-          id="mobile"
-          required
-        />
-      </div>
+          <div class="form-group">
+            <label for="mobile">Contact<span class="danger">*</span></label>
+            <input type="tel" placeholder=" 9876543210" id="mobile" required />
+          </div>
+        </div>
 
-      <button class="btn-donor-submit" type="submit">Save</button>
+        <div class="form-right">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder=" john.doe@gmail.com" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option disabled selected value="">Choose gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button class="btn-donor-page btn-donor-submit" type="submit">
+        Save
+      </button>
+      <a
+        href="../index.html"
+        class="btn-donor-page btn-donor-home"
+        type="button"
+        >Back</a
+      >
     </form>
   </body>
 </html>

@@ -46,16 +46,16 @@ header {
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.6);
 }
 .btn-donor {
-  background-color: #3dbe29;
-}
-.btn-acceptor {
   background-color: #e21717;
 }
+.btn-acceptor {
+  background-color: #3dbe29;
+}
 .btn-donor:hover {
-  background-color: rgba(36, 161, 16, 0.993);
+  background-color: rgba(179, 9, 9, 0.918);
 }
 .btn-acceptor:hover {
-  background-color: rgba(179, 9, 9, 0.918);
+  background-color: rgba(36, 161, 16, 0.993);
 }
 
 /* donor page */
@@ -65,14 +65,28 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f4ce6a;
 }
 .donor-title {
   margin-bottom: 4rem;
 }
 form {
+  background-color: #fff;
   border: 2px solid black;
   padding: 2rem 4rem;
   border-radius: 1rem;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-left {
+  margin-right: 1rem;
+}
+.form-right {
+  margin-left: 1rem;
 }
 .form-group {
   display: flex;
@@ -93,10 +107,11 @@ select {
   width: 30rem;
   font-size: 2.2rem;
 }
-
-.btn-donor-submit {
-  width: 30rem;
-  padding: 1rem 1rem;
+.danger {
+  color: red;
+}
+.btn-donor-page {
+  padding: 1rem 1.5rem;
   border-radius: 1rem;
   font-size: 2.4rem;
   font-weight: 600;
@@ -104,10 +119,16 @@ select {
   border: none;
   color: #fff;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.6);
-  background-color: #e21717;
+
   cursor: pointer;
 }
-
+.btn-donor-submit {
+  background-color: #e21717;
+}
+.btn-donor-home {
+  margin-left: 1rem;
+  background-color: black;
+}
 .btn-donor-submit:active,
 .btn-donor-submit:hover {
   background-color: rgba(180, 4, 4, 0.904);
